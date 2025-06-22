@@ -120,7 +120,7 @@ export default function Easy() {
     const cards = Array.from(document.getElementsByClassName('card'));
     overlays[0].classList.add('visible');
 
-    gameRef.current = new MixOrMatch(5, cards, navigate);
+    gameRef.current = new MixOrMatch(60, cards, navigate);
 
 
     overlays.forEach(ov => {

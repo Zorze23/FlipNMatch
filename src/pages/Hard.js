@@ -124,7 +124,7 @@ export default function Easy() {
     const cards = Array.from(document.getElementsByClassName('card'));
     overlays[0].classList.add('visible');
 
-    gameRef.current = new MixOrMatch(5, cards, navigate);
+    gameRef.current = new MixOrMatch(45, cards, navigate);
 
 
     overlays.forEach(ov => {
@@ -171,7 +171,7 @@ const cardSet = [
       {/* Info bar + grid */}
       <div className="game-container">
         <div className="game-info-container">
-          <div className="game-info">Time : <span id="time-remaining">5</span></div>
+          <div className="game-info">Time : <span id="time-remaining">45</span></div>
           <div className="game-info">Flips : <span id="flips">0</span></div>
         </div>
 
