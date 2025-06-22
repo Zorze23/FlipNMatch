@@ -1,0 +1,85 @@
+/* Google Font « Press Start 2P » (8-bit) */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --green: #00815c;
+  --yellow: #ffcf00;
+  --red: #d00000;
+  --beige: #fffbe0;
+  --black: #000;
+}
+
+.home {
+  min-height: 100vh;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 1rem 4rem;
+  box-sizing: border-box;
+}
+
+/* Title & subtitle */
+.title {
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(2rem, 6vw, 4rem);
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.subtitle {
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+/* Card container */
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual card */
+.card {
+  width: 110px;
+  height: 170px;
+  padding: 0.6rem 0.4rem;
+  border: 4px solid var(--black);
+  background: var(--beige);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 60%;
+  image-rendering: pixelated;
+}
+
+/* Colours par niveau */
+.easy   { border-color: var(--green); }
+.medium { border-color: var(--yellow); }
+.hard   { border-color: var(--red);   }
+
+.easy   .label { color: var(--green); }
+.medium .label { color: var(--yellow); }
+.hard   .label { color: var(--red);   }
+
+
+.label {
+  font-size: 0.65rem;
+  letter-spacing: -1px;
+}
+
+.level{
+  padding-top: 200px;
+}

@@ -1,0 +1,48 @@
+
+.overlay-text {
+    position: fixed;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1292ff;
+    z-index: 100;
+  }
+  
+
+  .overlay-text.visible { display: flex; }
+  
+
+  .go-title {
+    font-family: "Press Start 2P", monospace;
+    font-size: clamp(3rem, 9vw, 7rem);
+    color: #ff0000;
+    text-shadow: 4px 4px #000; 
+    margin: 0 0 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+
+  .pixel-btn {
+    background: #000;                 
+    color: #fff;
+    font-family: "Press Start 2P", monospace;
+    font-size: clamp(1rem, 3vw, 2rem);
+    padding: 1.2rem 2.6rem;
+    margin: 1rem 0;
+    border: 4px solid #fff;          
+    box-shadow: 0 0 0 4px #000;      
+    width: min(90%, 450px);           
+    cursor: pointer;
+    transition: transform .1s;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .pixel-btn:hover   { 
+    transform: translateY(-4px); 
+    color: #ff0000;}
+  .pixel-btn:active  { transform: translateY(0);    }
