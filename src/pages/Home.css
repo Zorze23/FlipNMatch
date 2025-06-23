@@ -28,15 +28,15 @@
 }
 
 .subtitle {
-  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
-  text-align: center;
-  margin: 0 0 2.5rem;
+  font-size: clamp(0.9rem, 2.5vw, 2rem);
+  text-align:center;
+  margin: -7rem 0 2.5rem;
 }
 
 /* Card container */
 .cards {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -57,11 +57,12 @@
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform: translateY(-8px) scale(1.0);
 }
 
 .card img {
-  width: 60%;
+  width: 150%;
   image-rendering: pixelated;
 }
 
