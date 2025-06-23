@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Easy.css';
-import bra  from '../assets/Images/Bra.webp';
-import chi from '../assets/Images/Chi.webp';
-import luc  from '../assets/Images/Luc.webp';
-import tri from '../assets/Images/tri.webp';
-import can  from '../assets/Images/Can.webp';
+import bra  from '../assets/Images/flower2.png';
+import chi from '../assets/Images/flower1.png';
+import luc  from '../assets/Images/flower3.png';
+import tri from '../assets/Images/flower4.png';
+import can  from '../assets/Images/flower5.png';
 import cobweb  from '../assets/Images/cobweb.png';
 
 const IMAGES = { tri, can, bra, chi, luc };
@@ -152,7 +152,7 @@ const cardSet = [
       <header className="top-bar">
       <button className="back-btn" onClick={() => (window.location.href = '/')} >Back</button>
       </header>
-      <h1 className="page-title">FLOP N MATCH</h1>
+      <h1 className="page-title">FLIP N MATCH</h1>
 
       {/* Overlays */}
       <div className="overlay-text">Click to Start</div>
