@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Easy.css';
 import cobweb  from '../assets/Images/cobweb.png';
-import jokholo from '../assets/Images/jOKHOLO.webp';
-import jokerv  from '../assets/Images/JOKERV.webp';
+import jokholo from '../assets/Images/Animal1.png';
+import jokerv  from '../assets/Images/Animal2.png';
 
 const IMAGES = { jokholo, jokerv };
 
@@ -149,7 +149,7 @@ export default function Easy() {
         ← Back
       </button>
       </header>
-      <h1 className="page-title">FLOP N MATCH</h1>
+      <h1 className="page-title">FLIP N MATCH</h1>
 
       {/* Overlays */}
       <div className="overlay-text">Click to Start</div>
